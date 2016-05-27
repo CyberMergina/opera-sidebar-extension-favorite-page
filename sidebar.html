@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title></title>
+    <style>
+      html,
+      body {
+        border: none;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+        width: 100%;
+      }
+      * { box-sizing: border-box; }
+      div#form { margin: 5px; display: flex; }
+      input { padding: 5px; width: 40%; height: 30px; margin-right: 5px; }
+      input#name { width: 40% }
+      input#url { width: 50% }
+      li { list-style-type: upper-roman; }
+      a {
+        color: #00B3CA;
+        text-decoration: none; 
+      }
+      a#push {
+        padding: 7px;
+        text-decoration: none;
+        color: #FFF;
+        background-color: #ACACAC;
+        height: 30px!important;
+      }
+      a#push:hover { background-color: #909090 }
+    </style>
+    <script type="text/javascript" src="sidebar.js"></script>
+  </head>
+  <body>
+    <div id="form">
+      <input type="text" id="name" placeholder="name" value="" />
+      <input type="text" id="url"  placeholder="url" value="" />
+      <a href="javascript:void(0)" id="push" >PUSH</a>
+    </div>
+    <div id="favorite-page">
+      <ul id="favorite-list"></ul>
+    </div>
+  </body>
+</html>
